@@ -18,16 +18,16 @@ install opencv
 install virtual environment
 `sudo pip install virtualenv virtualenvwrapper --ignore-installed six`
 
-#create new virtual environment
+create new virtual environment
 `mkvirtualenv opencv_env -p python`
 
-#activate the created virtual environment
+activate the created virtual environment
 `workon opencv_env`
 
-#install numpy
+install numpy
 `pip install numpy`
 
-#link cv2
+link cv2
 `cd ~/.virtualenvs/opencv_env/lib/python2.7/site-packages/`
 `ln -s /usr/local/opt/opencv/lib/python2.7/site-packages/cv2.so cv2.so`
 `cd ~ `
@@ -37,4 +37,4 @@ and "/usr/local/Cellar/opencv/3.3.1_1/share/OpenCV/haarcascades/haarcascade_smil
 
 run the program
 `python smile_detector.py`
- # SmileDetector
+
